@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | bryan
+    </title>
+    <link rel="stylesheet" href="maincss.css">
+</head>
+<body>
+
+    <!-- ==================== STICKY NAVBAR ==================== -->
+    <header>
+        <div class="container nav-bar">
+            <a href="mainpage.html" class="logo">
+                <span class="logo-icon">SHY</span>
+                <span>MONEY<span style="color: var(--brand-color);">.burat</span></span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="mainpage.html">Home</a>
+                <a href="aboutme.html" style="color: var(--brand-color);">About</a>
+                <a href="projectpage.html">Projects</a>
+                <a href="mainpage.html#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme" class="icon-btn">🌓</button>
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="icon-btn md:hidden">☰</button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden" style="background-color: var(--bg-surface); border-bottom: 1px solid var(--border-color); padding: 1rem 1.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; font-weight: 500;">
+                <a href="mainpage.html" class="mobile-nav-link" style="text-decoration: none; color: var(--text-primary);">Home</a>
+                <a href="aboutme.html" class="mobile-nav-link" style="text-decoration: none; color: var(--brand-color);">About</a>
+                <a href="projectpage.html" class="mobile-nav-link" style="text-decoration: none; color: var(--text-primary);">Projects</a>
+                <a href="mainpage.html#contact" class="mobile-nav-link" style="text-decoration: none; color: var(--text-primary);">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about" style="padding: 4rem 0; min-height: calc(100vh - 10rem);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <div class="section-divider"></div>
+                    <p>Get to know more about my background, current studies, and technical stack.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div>
+
+                        <!-- Profile Photo Box -->
+                        <div style="width: 100%; max-width: 240px; aspect-ratio: 1 / 1; border-radius: 1.25rem; overflow: hidden; border: 2px solid var(--border-color); background-color: var(--bg-surface); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); margin-bottom: 1.5rem;">
+                            <img 
+                                src="picture.jfif" 
+                                alt="Bryan Edward Karunasenghe" 
+                                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x400/e2e8f0/475569?text=Your+Photo';"
+                            >
+                        </div>
+
+                        <div style="display: inline-block; padding: 0.75rem; border-radius: 1rem; background-color: var(--brand-light); color: var(--brand-color); margin-bottom: 1rem; font-size: 1.5rem;">
+                            🎓
+                        </div>
+                        <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Currently at third (3rd) year of college</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
+                            I am currently pursuing a Bachelor's Degree in Computer Science at Cavite State University. My academic journey has allowed me to dive deep into data structures, web development, software design patterns, but I am currently still working on mastering them.
+                        </p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;">
+                            I still find myself getting lost sometimes, but I am really doing my best to learn more and improve my technical skills every day.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">Skills & Technologies</h3>
+                        
+                        <div class="about-box">
+                            <h4 style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--brand-color); margin-bottom: 0.5rem;">Programming Languages</h4>
+                            <div class="skills-container">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C++</span>
+                            </div>
+                        </div>
+
+                        <div class="about-box">
+                            <h4 style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--brand-color); margin-bottom: 0.5rem;">Web & Frontend</h4>
+                            <div class="skills-container">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3 / Vanilla</span>
+                            </div>
+                        </div>
+
+                        <div class="about-box">
+                            <h4 style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--brand-color); margin-bottom: 0.5rem;">Tools & Systems</h4>
+                            <div class="skills-container">
+                                <span class="skill-tag">Git & GitHub</span>
+                                <span class="skill-tag">Visual Studio Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> Bryan Edward Karunasenghe. All rights reserved.</p>
+            <p style="font-size: 0.75rem;"> Made with HTML5, CSS & Vanilla JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

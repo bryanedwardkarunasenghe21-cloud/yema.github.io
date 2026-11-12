@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Karunasenghe | Student & Developer Portfolio</title>
+    <!-- Link to your local custom CSS stylesheet -->
+    <link rel="stylesheet" href="maincss.css">
+</head>
+<body>
+
+    <!-- ==================== STICKY NAVBAR ==================== -->
+    <header>
+        <div class="container nav-bar">
+            <!-- Logo / Name -->
+            <a href="#home" class="logo">
+                <span class="logo-icon">BK</span>
+                <span>shy<span style="color: var(--brand-color);">.money</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="desktop-nav">
+                <a href="#home">Home</a>
+                <a href="aboutme.html">About</a>
+                <a href="projectpage.html">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <!-- Actions: Dark Mode Toggle & Mobile Menu Button -->
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme" class="icon-btn">
+                    🌓
+                </button>
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="icon-btn md:hidden">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden" style="background-color: var(--bg-surface); border-bottom: 1px solid var(--border-color); padding: 1rem 1.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; font-weight: 500;">
+                <a href="#home" class="mobile-nav-link" style="text-decoration: none; color: var(--text-primary);">Home</a>
+                <a href="aboutme.html" class="mobile-nav-link" style="text-decoration: none; color: var(--text-primary);">About</a>
+                <a href="projectpage.html" class="mobile-nav-link" style="text-decoration: none; color: var(--text-primary);">Projects</a>
+                <a href="#contact" class="mobile-nav-link" style="text-decoration: none; color: var(--text-primary);">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========= HOME / HERO SECTION ========= -->
+        <section id="home" class="hero">
+            <div class="hero-glow"></div>
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="badge">
+                    <span class="pulse-dot"></span> Welcome to my portfolio website
+                </div>
+                
+                <h1>
+                    Hi, I'm <span class="gradient-text">Bryan Edward Karunasenghe</span>
+                </h1>
+
+                <p class="subtitle">
+                    I am a <span id="typing-text" class="typing-cursor" style="color: var(--brand-color); font-weight: bold;"></span>
+                </p>
+
+                <p class="desc">
+                  I am Bryan 3rd year college  Computer Science student  ,i do really love computer when it come on video games or anything about computers. 
+                </p>
+
+                <div class="btn-group">
+                    <a href="projectpage.html" class="btn btn-primary">
+                        View My Work ↓
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact me ✉
+                    </a>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">Cavite State University</div>
+                        <div class="stat-label">School</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">2  Projects</div>
+                        <div class="stat-label"> Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">2026-2027</div>
+                        <div class="stat-label">Academic Year</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">Computer Science</div>
+                        <div class="stat-label">Academic Program</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section id="contact" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lets Talk</h2>
+                    <div class="section-divider"></div>
+                    <p>Have a question, about me, my projects or about my website? Drop me a message!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Let's Connect</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7;">
+                            I am greatful you spend a little time of your life viewing my works!! appreciate it!!
+                        </p>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">✉</div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary); font-weight: bold; text-transform: uppercase;">Email</div>
+                                <a href="mailto:alex.rivera.dev@example.com" style="color: var(--text-primary); text-decoration: none; font-weight: 600;">bryanedwardkarunasenghe21@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary); font-weight: bold; text-transform: uppercase;">location</div>
+                                <div style="font-weight: 600;">Cavite State University</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form id="contact-form" class="contact-form">
+                            <div id="form-success" class="hidden" style="padding: 1rem; border-radius: 0.75rem; background-color: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #10b981; font-size: 0.875rem; margin-bottom: 1.25rem;">
+                                Thank you! Your message has been sent successfully.
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" required placeholder="Bryan Karunasenghe" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email *</label>
+                                    <input type="email" id="email" required placeholder="@example.com" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" required placeholder="Got any idea?" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" rows="4" required placeholder="Hello, I came across your portfolio..." class="form-control"></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> Bryan Edward Karunasenghe. All rights reserved.</p>
+            <p style="font-size: 0.75rem;"> Made with HTML5, CSS & Vanilla JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL ==================== -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div style="height: 16rem; position: relative; background-color: var(--border-color);">
+                <img id="modal-image" src="" alt="Project detail" style="width: 100%; height: 100%; object-fit: cover;">
+                <button onclick="closeProjectModal()" style="position: absolute; top: 1rem; right: 1rem; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: rgba(0,0,0,0.6); color: white; border: none; cursor: pointer; font-size: 1.25rem;">✕</button>
+            </div>
+            <div style="padding: 2rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <span id="modal-category" style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--brand-color);"></span>
+                    <span id="modal-course" style="font-size: 0.75rem; color: var(--text-secondary); font-weight: 600;"></span>
+                </div>
+                <h3 id="modal-title" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;"></h3>
+                <p id="modal-description" style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.7; margin-bottom: 1.5rem;"></p>
+                
+                <h4 style="font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem;">Technologies Used</h4>
+                <div id="modal-tags" class="skills-container" style="margin-bottom: 1.5rem;"></div>
+
+                <div style="text-align: right;"
+                    <button onclick="closeProjectModal()" class="btn btn-secondary" style="padding: 0.5rem 1.5rem;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
